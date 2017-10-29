@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+
+body
+{
+	margin: 0em;
+}
+
+div#main
+{
+	margin: 0em auto;
+	padding: 0.5em;
+}
+
+div#main h1
+{
+	margin: 0.5em 0.5em 1em;
+}
+
+div#main p
+{
+	margin: 1em;
+}
+
+div#main p.list-below
+{
+	margin-bottom: 0.5em;
+}
+
+div#main h2
+{
+	margin: 1.33em 0.67em 0.67em;
+}
+
+div#main ul
+{
+	margin: 0.5em
+}
+
+div#main ul li
+{
+	margin: 0.5em
+}
+
+p.footer
+{
+	margin: 2em 1em 1em;
+}
+
+@media (min-width: 50em)
+{
+	div#main
+	{
+		padding: 1em;
+	}
+	
+	div#main h1
+	{
+		margin: 1em;
+	}
+}
+
+@media (min-width: 66em)
+{
+	div#main
+	{
+		width: 62em;
+	}
+}

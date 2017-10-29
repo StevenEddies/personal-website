@@ -1,0 +1,3 @@
+AddType x-httpd-php56 .php
+# Added automatically by Gridhost panel Tuesday 12th of May 2015 11:41:29 AM
+Options -Indexes
