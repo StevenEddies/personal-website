@@ -1,6 +1,6 @@
 # WESU Website
 
-This repository contains the source of [Steven Eddies' website](http://www.eddies.me.uk/).
+This repository contains the source of [Steven Eddies' website](https://www.eddies.me.uk/).
 
 
 ## Technical Information
