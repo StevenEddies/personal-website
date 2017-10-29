@@ -1,4 +1,4 @@
-# WESU Website
+# Steven Eddies' Personal Website
 
 This repository contains the source of [Steven Eddies' website](https://www.eddies.me.uk/).
 
