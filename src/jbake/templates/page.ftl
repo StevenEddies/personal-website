@@ -14,7 +14,7 @@
 
 			${content.body}
 			
-			<p class="footer">&copy; Steven Eddies, 2014-2017</p>
+			<p class="footer">&copy; Steven Eddies, 2014-2018</p>
 
 		</div>
 		
