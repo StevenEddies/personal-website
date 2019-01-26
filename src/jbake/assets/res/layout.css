@@ -46,6 +46,14 @@ p.footer
 	margin: 2em 1em 1em;
 }
 
+img.profile
+{
+	float: right;
+	width: 10em;
+	height: 10em;
+	margin: 1em;
+}
+
 @media (min-width: 50em)
 {
 	div#main
