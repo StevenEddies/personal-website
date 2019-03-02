@@ -39,11 +39,12 @@ task deploy << {
 			def tempDeployDir = project.findProperty("uk.me.eddies.personal-website.deploy.temp")
 			put from: "${buildDir}/deploy/", into: tempDeployDir
 			execute "unzip ${tempDeployDir}/deploy/web.zip -d ${tempDeployDir}/extracted/"
-			execute "rm --preserve-root -Rf ${deployDir}/*", ignoreError: true
-			execute "rm --preserve-root -Rf ${deployDir}/.[^.]*", ignoreError: true
-			execute "mv ${tempDeployDir}/extracted/{*,.*} ${deployDir}/"
-			execute "rm --preserve-root -Rf ${tempDeployDir}/*", ignoreError: true
-			execute "rm --preserve-root -Rf ${tempDeployDir}/.[^.]*", ignoreError: true
+			execute "rm --preserve-root -Rvf ${deployDir}/*", ignoreError: true
+			execute "rm --preserve-root -Rvf ${deployDir}/.[^.]*", ignoreError: true
+			execute "mv -v ${tempDeployDir}/extracted/* ${deployDir}/"
+			execute "mv -v ${tempDeployDir}/extracted/.[^.]* ${deployDir}/"
+			execute "rm --preserve-root -Rvf ${tempDeployDir}/*", ignoreError: true
+			execute "rm --preserve-root -Rvf ${tempDeployDir}/.[^.]*", ignoreError: true
 		}
 	}
 }
