@@ -40,8 +40,10 @@ task deploy << {
 			put from: "${buildDir}/deploy/", into: tempDeployDir
 			execute "unzip ${tempDeployDir}/deploy/web.zip -d ${tempDeployDir}/extracted/"
 			execute "rm --preserve-root -Rf ${deployDir}/*", ignoreError: true
-			execute "mv ${tempDeployDir}/extracted/* ${deployDir}/"
+			execute "rm --preserve-root -Rf ${deployDir}/.[^.]*", ignoreError: true
+			execute "mv ${tempDeployDir}/extracted/{*,.*} ${deployDir}/"
 			execute "rm --preserve-root -Rf ${tempDeployDir}/*", ignoreError: true
+			execute "rm --preserve-root -Rf ${tempDeployDir}/.[^.]*", ignoreError: true
 		}
 	}
 }
