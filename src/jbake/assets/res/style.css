@@ -2,14 +2,14 @@
 
 body
 {
-	background-color: #cccccc;
-	background-image: linear-gradient(to right, rgba(255,255,255,0.0), rgba(255,255,255,0.5), rgba(255,255,255,0.5), rgba(255,255,255,0.0));
+	background-color: #200038;
+	background-image: linear-gradient(to right, rgba(48,14,70,0.0), rgba(48,14,70,0.2), rgba(48,14,70,0.4), rgba(48,14,70,0.0));
 	background-attachment: fixed;
 }
 
 div#main
 {
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.6);
 }
 
 div#main h1
@@ -18,13 +18,13 @@ div#main h1
 	font-size: 2em;
 	font-family: Verdana,sans-serif;
 	text-align: center;
-	color: #666666;
+	color: #301f3d;
 }
 
 div#main p
 {
 	font-family: Verdana,sans-serif;
-	color: #333333;
+	color: #200038;
 }
 
 div#main h2
@@ -32,19 +32,19 @@ div#main h2
 	font-family: Verdana,sans-serif;
 	font-size: 1.5em;
 	font-weight: bold;
-	color: #666666;
+	color: #301f3d;
 }
 
 div#main ul li
 {
 	font-family: Verdana,sans-serif;
-	color: #222222;
+	color: #200038;
 }
 
 div#main a
 {
 	text-decoration: none;
-	color: #4c33cc;
+	color: #422db2;
 }
 
 div#main a:hover
@@ -53,12 +53,12 @@ div#main a:hover
 	color: #392699;
 }
 
-p.footer
+div#main p.footer
 {
 	font-family: Verdana,sans-serif;
 	font-size: 0.8em;
 	text-align: center;
-	color: #666666;
+	color: rgba(0,0,0,0.4);
 }
 
 @media (min-width: 66em)
